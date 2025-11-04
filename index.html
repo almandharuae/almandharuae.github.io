@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dubai Adventure Package - Book Now</title>
+    <title>Dubai Adventure Package - Book Now | Sanya Travel UAE</title>
+    <meta name="description" content="Book your Dubai Adventure Package with Sanya Travel UAE. 5-star accommodation, Burj Khalifa, Desert Safari, and more. Secure PayPal payment.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container">
             <h1>✈️ Dubai Adventure Package</h1>
-            <p>Experience the Ultimate 5-Day Journey</p>
+            <p>Experience the Ultimate 5-Day Journey with Sanya Travel UAE</p>
         </div>
     </header>
 
     <main class="container">
         <section class="hero">
-            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200" alt="Dubai Skyline">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200" alt="Dubai Skyline with Burj Khalifa">
         </section>
 
         <section class="package-details">
@@ -67,7 +68,7 @@
                         placeholder="Enter amount (e.g., 999.00)"
                         required>
                 </div>
-                <p class="input-note">Minimum amount: $100.00</p>
+                <p class="input-note">Minimum amount: $1.00</p>
             </div>
 
             <!-- Number of Travelers (Optional) -->
@@ -94,12 +95,27 @@
                     placeholder="Enter your full name">
             </div>
 
-            <p class="payment-instruction">Click the PayPal button below to proceed with payment</p>
+            <!-- Customer Email (Optional) -->
+            <div class="customer-info-section">
+                <label for="customer-email">Email Address (Optional):</label>
+                <input 
+                    type="email" 
+                    id="customer-email" 
+                    name="customer-email" 
+                    placeholder="your.email@example.com">
+            </div>
+
+            <p class="payment-instruction">Click the PayPal button below to proceed with secure payment</p>
             
             <!-- PayPal Button Container -->
             <div id="paypal-button-container"></div>
             
             <p id="error-message" class="error-message"></p>
+            
+            <div class="security-badges">
+                <p>🔒 Secure Payment Powered by PayPal</p>
+                <p class="small-text">Your payment information is protected with industry-leading security</p>
+            </div>
         </section>
 
         <section class="itinerary">
@@ -125,16 +141,25 @@
                 <p>Hotel checkout, airport transfer</p>
             </div>
         </section>
+
+        <section class="contact-info">
+            <h2>Need Help?</h2>
+            <p>Contact Sanya Travel UAE for any questions about your booking</p>
+            <p>📧 Email: info@sanyatraveluae.com</p>
+            <p>📱 WhatsApp: Available upon request</p>
+        </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Your Travel Company. All rights reserved.</p>
+            <p>&copy; 2025 Sanya Travel UAE. All rights reserved.</p>
+            <p class="small-text">Licensed Travel Agency - Dubai, UAE</p>
         </div>
     </footer>
 
-    <!-- PayPal SDK -->
-    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&currency=USD"></script>
+    <!-- PayPal SDK - LIVE MODE -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AffVxIgA2FwGQ0f1fSU-ZJG7C2qOSpO_jQRQuYF0BGS3yNYhE9y9HP5-wAyvzn3_ytf1dk8gWnjBpq-z
+&currency=USD"></script>
     <script src="payment.js"></script>
 </body>
 </html>
